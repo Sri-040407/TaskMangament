@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Management Application</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="app-shell">
+            <section class="hero-card">
+                <div class="hero-text">
+                    <p class="eyebrow">Task Management Application</p>
+                    <h1>Elegant Productivity in Pastel Bloom</h1>
+                    <p class="subtitle">Created by T. Sridevi</p>
+                </div>
+                <div class="hero-graphic" aria-hidden="true">
+                    <span class="petal petal-1"></span>
+                    <span class="petal petal-2"></span>
+                    <span class="petal petal-3"></span>
+                    <span class="petal petal-4"></span>
+                </div>
+            </section>
+
+            <section class="task-panel">
+                <div class="task-entry">
+                    <label for="task-input">Add New Task</label>
+                    <div class="input-group">
+                        <input id="task-input" type="text" placeholder="Write your gentle task here..." />
+                        <button id="add-task-btn" type="button">Add Task</button>
+                    </div>
+                </div>
+
+                <div class="task-stats">
+                    <div class="stat-card">
+                        <h3>Pending</h3>
+                        <p id="pending-count">0</p>
+                    </div>
+                    <div class="stat-card stat-card-soft">
+                        <h3>Completed</h3>
+                        <p id="completed-count">0</p>
+                    </div>
+                </div>
+
+                <div class="tasks-layout">
+                    <div class="tasks-section">
+                        <div class="section-header">
+                            <h2>Pending Tasks</h2>
+                        </div>
+                        <div id="pending-tasks" class="tasks-list"></div>
+                    </div>
+                    <div class="tasks-section">
+                        <div class="section-header">
+                            <h2>Completed Tasks</h2>
+                        </div>
+                        <div id="completed-tasks" class="tasks-list"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="floating-floral floral-1"></div>
+        <div class="floating-floral floral-2"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
